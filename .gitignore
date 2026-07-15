@@ -6,6 +6,9 @@
 Thumbs.db
 desktop.ini
 
+# Rust build artifacts
+target/
+
 # Editor files
 *.swp
 *.swo

@@ -70,3 +70,22 @@
 **推荐起点：Stage 2 — Ownership 核心**，然后 Stage 4 错误处理。
 
 **用户确认：** 准备开始学习。
+
+---
+
+## 会话: Stage 2 Ownership 学习 (2026-07-15)
+
+**内容：**
+
+| 课节 | 主题 | 关键点 |
+|------|------|--------|
+| Lesson 1 | Stack vs Heap | `String` 栈上 24 字节（ptr+len+cap），内容在堆；`size_of_val` 测量栈占用 |
+| Lesson 2 | Ownership 规则 | 3 条规则；Move vs Copy 区分；i32 有 Copy trait，String 没有 |
+| Lesson 3 | 函数传参与返回值 | 传参 = Move；返回值可转移所有权；用户提问"函数内被 drop 如何传出"→ 关键理解：return 可以继续转移 |
+| Lesson 4 | 引用 & 借用 | `&T` 不可变引用可多个共存；`&mut T` 唯一可变引用；不可变与可变不可混用 |
+
+**用户习题：**
+
+- ✅ Lesson 1：`cargo new learn-ownership`，用 `size_of_val` 测量变量栈占用，运行正确
+- ✅ Lesson 2：准确回答 Move vs Copy 差异
+- 🔄 Lesson 4：`first_word` 练习待完成
